@@ -9,7 +9,7 @@ Hi, I'm **Thanh Tam Do**. I'm an undergraduate Computer Science student at the U
 - B.S. in Computer Science & Mathematics - University of Houston *(Expected Dec 2027)*
 - Hackathon winner - Rice Datathon 2026 & HackHCC 2026
 - Currently building a real estate media SaaS serving 80+ clients across Texas
-- Reach me at **[thanhtamdo912005@gmail.com](mailto:thanhtamdo912005@gmail.com)** · [LinkedIn](https://www.linkedin.com/in/tam-do91/) · [GitHub](https://github.com/dothanhtam91)
+- Reach me at **[thanhtamdo912005@gmail.com](mailto:thanhtamdo912005@gmail.com)** Â· [LinkedIn](https://www.linkedin.com/in/tam-do91/) Â· [GitHub](https://github.com/dothanhtam91)
 
 ---
 
@@ -90,18 +90,18 @@ Hi, I'm **Thanh Tam Do**. I'm an undergraduate Computer Science student at the U
 
 ## GitHub Activity
 
-Live contribution stats from [my GitHub profile](https://github.com/dothanhtam91).
+Live contribution stats from [my GitHub profile](https://github.com/dothanhtam91). These cards refresh from GitHub API data nightly.
 
 <p align="center">
-  <img height="195" src="https://streak-stats.demolab.com/?user=dothanhtam91&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-  <img height="195" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dothanhtam91&theme=tokyonight" alt="GitHub Stats" />
+  <img height="195" src="profile/streak.svg" alt="GitHub Streak" />
+  <img height="195" src="profile/stats.svg" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dothanhtam91&theme=tokyonight" alt="Repos per language" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=dothanhtam91&theme=tokyonight" alt="Most commit language" />
+  <img width="49%" src="profile/repos-per-language.svg" alt="Repos per language" />
+  <img width="49%" src="profile/most-commit-language.svg" alt="Most commit language" />
 </p>
 
 <p align="center">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=dothanhtam91&theme=tokyo-night&hide_border=true&area=true" alt="Contribution activity graph" />
+  <img width="98%" src="profile/activity.svg" alt="Contribution activity graph" />
 </p>

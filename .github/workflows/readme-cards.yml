@@ -1,0 +1,45 @@
+name: Update README cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "11 4 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/readme-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh GitHub stats cards
+        env:
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          mkdir -p profile
+          curl -fsSL "https://streak-stats.demolab.com/?user=${USERNAME}&theme=tokyonight&hide_border=true" -o profile/streak.svg
+          curl -fsSL "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${USERNAME}&theme=tokyonight" -o profile/stats.svg
+          curl -fsSL "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${USERNAME}&theme=tokyonight" -o profile/repos-per-language.svg
+          curl -fsSL "https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${USERNAME}&theme=tokyonight" -o profile/most-commit-language.svg
+          curl -fsSL "https://github-readme-activity-graph.vercel.app/graph?username=${USERNAME}&theme=tokyo-night&hide_border=true&area=true" -o profile/activity.svg
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("profile/activity.svg")
+          text = p.read_text()
+          if "<svg" in text:
+              p.write_text(text[text.index("<svg"):])
+          PY
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile
+          git diff --cached --quiet || git commit -m "chore: refresh README cards"
+          git push
