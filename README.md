@@ -98,10 +98,5 @@ Live contribution stats from [my GitHub profile](https://github.com/dothanhtam91
 </p>
 
 <p align="center">
-  <img width="49%" src="profile/repos-per-language.svg" alt="Repos per language" />
-  <img width="49%" src="profile/most-commit-language.svg" alt="Most commit language" />
-</p>
-
-<p align="center">
   <img width="98%" src="profile/activity.svg" alt="Contribution activity graph" />
 </p>
